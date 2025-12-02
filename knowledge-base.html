@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IT Help Desk | Knowledge Base</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">IT Help Desk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="knowledge-base.html" class="active">Knowledge Base</a></li>
+          <li><a href="contact.html">Contact / Ticket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Knowledge Base</h1>
+      <p class="section-subtitle">
+        Self-service guides for common issues. Start here before submitting a ticket, and you might solve your issue in minutes.
+      </p>
+
+      <div class="kb-grid">
+        <div class="card kb-category">
+          <h2>Accounts & Login</h2>
+          <ul>
+            <li><a href="#">Reset your domain password</a></li>
+            <li><a href="#">Set up multi-factor authentication (MFA)</a></li>
+            <li><a href="#">Unlock your account</a></li>
+          </ul>
+        </div>
+
+        <div class="card kb-category">
+          <h2>Network & VPN</h2>
+          <ul>
+            <li><a href="#">Connect to the corporate Wi-Fi</a></li>
+            <li><a href="#">VPN setup for Windows</a></li>
+            <li><a href="#">VPN setup for macOS</a></li>
+          </ul>
+        </div>
+
+        <div class="card kb-category">
+          <h2>Collaboration Tools</h2>
+          <ul>
+            <li><a href="#">Outlook email troubleshooting</a></li>
+            <li><a href="#">Microsoft Teams basics</a></li>
+            <li><a href="#">Zoom meeting best practices</a></li>
+          </ul>
+        </div>
+
+        <div class="card kb-category">
+          <h2>Hardware & Devices</h2>
+          <ul>
+            <li><a href="#">Requesting a new laptop</a></li>
+            <li><a href="#">Docking station and monitor setup</a></li>
+            <li><a href="#">Using your company headset</a></li>
+          </ul>
+        </div>
+
+        <div class="card kb-category">
+          <h2>Security & Compliance</h2>
+          <ul>
+            <li><a href="#">How to identify phishing emails</a></li>
+            <li><a href="#">Reporting lost or stolen devices</a></li>
+            <li><a href="#">Data classification & handling</a></li>
+          </ul>
+        </div>
+
+        <div class="card kb-category">
+          <h2>Internal Applications</h2>
+          <ul>
+            <li><a href="#">Accessing the HR portal</a></li>
+            <li><a href="#">Logging into the CRM</a></li>
+            <li><a href="#">Timesheet system FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top: 16px; font-size: 0.9rem;">
+        For full articles, link these entries to your actual documentation or wiki (Confluence, SharePoint, etc.).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> IT Help Desk · All rights reserved.</div>
+      <div>Email: it-helpdesk@example.com · Extension: 1234</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

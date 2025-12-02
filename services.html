@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IT Help Desk | Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">IT Help Desk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+          <li><a href="contact.html">Contact / Ticket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Our Services</h1>
+      <p class="section-subtitle">
+        Below is a summary of the support categories and channels available through the IT Help Desk.
+      </p>
+
+      <div class="hero-cards">
+        <div class="card">
+          <h2>Hardware Support</h2>
+          <ul class="feature-list">
+            <li>Laptop / desktop provisioning and replacement</li>
+            <li>Monitor and docking station setup</li>
+            <li>Peripheral devices (keyboard, mouse, headset)</li>
+            <li>Printer & scanner configuration</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Software & Applications</h2>
+          <ul class="feature-list">
+            <li>Operating system issues and updates</li>
+            <li>Productivity tools (Office, email, calendar)</li>
+            <li>Collaboration platforms (Teams, Zoom, Slack)</li>
+            <li>Line-of-business / internal applications</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Accounts & Access</h2>
+          <ul class="feature-list">
+            <li>Password resets and MFA configuration</li>
+            <li>Account unlocks and new account requests</li>
+            <li>VPN & remote access support</li>
+            <li>Permission and role changes for systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 32px;">Support Channels</h2>
+      <div class="hero-cards">
+        <div class="card">
+          <span class="badge">Recommended</span>
+          <h3>Service Portal / Ticketing</h3>
+          <p>
+            Use the online ticket form for non-urgent issues, access requests, and changes.  
+            You can track status and updates directly in the portal.
+          </p>
+          <a href="contact.html" class="btn">Open a Ticket</a>
+        </div>
+        <div class="card">
+          <h3>Phone Support</h3>
+          <p>
+            Call <strong>+1 (000) 123-4567</strong> or internal extension <strong>1234</strong> for urgent incidents such as outages, critical system issues, or security concerns.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Email Support</h3>
+          <p>
+            Send an email to <strong>it-helpdesk@example.com</strong> for low-priority issues.  
+            A ticket will be created automatically and assigned to the appropriate team.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> IT Help Desk · All rights reserved.</div>
+      <div>Email: it-helpdesk@example.com · Extension: 1234</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

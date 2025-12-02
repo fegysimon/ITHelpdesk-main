@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IT Help Desk | Contact / Ticket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">IT Help Desk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+          <li><a href="contact.html" class="active">Contact / Ticket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Contact the IT Help Desk</h1>
+      <p class="section-subtitle">
+        Submit a ticket using the form below. For urgent incidents, please call the Help Desk directly.
+      </p>
+
+      <div class="card form-card">
+        <form>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <input id="department" type="text" placeholder="e.g., Sales, HR, IT" />
+          </div>
+
+          <div class="form-group">
+            <label for="category">Issue Category</label>
+            <select id="category" required>
+              <option value="">Please select</option>
+              <option>Hardware</option>
+              <option>Software</option>
+              <option>Network / VPN</option>
+              <option>Account / Access</option>
+              <option>Security</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="priority">Priority</label>
+            <select id="priority">
+              <option>Low</option>
+              <option>Normal</option>
+              <option>High</option>
+              <option>Critical</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Short Summary</label>
+            <input id="subject" type="text" placeholder="Brief summary of the issue" />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Detailed Description</label>
+            <textarea id="description" placeholder="Describe the problem, any error messages, and steps already taken."></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit Ticket (Static Demo)</button>
+        </form>
+      </div>
+
+      <p style="margin-top: 16px; font-size: 0.9rem;">
+        Note: This is a static demo form. To make it functional, connect it to your ticketing system  
+        (e.g., ServiceNow, Jira Service Management, Freshservice, or a custom backend).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> IT Help Desk · All rights reserved.</div>
+      <div>Email: it-helpdesk@example.com · Extension: 1234</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

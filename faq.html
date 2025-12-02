@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IT Help Desk | FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">IT Help Desk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+          <li><a href="contact.html">Contact / Ticket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Frequently Asked Questions</h1>
+      <p class="section-subtitle">
+        Quick answers to the most common IT questions. For more detailed guides, visit the Knowledge Base.
+      </p>
+
+      <div class="card">
+        <div class="faq-item">
+          <h3>How do I reset my password?</h3>
+          <p>
+            Use the self-service password reset portal (if enabled) or contact the IT Help Desk by phone.  
+            For security reasons, we cannot send passwords via email or chat.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I request access to a new system?</h3>
+          <p>
+            Submit a ticket through the portal and select the request type <strong>“Access Request”</strong>.  
+            Include your manager’s name and the system you need access to.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is the expected response time for tickets?</h3>
+          <p>
+            Response times depend on priority:
+          </p>
+          <ul class="feature-list">
+            <li><strong>P1 – Critical:</strong> 15–30 minutes</li>
+            <li><strong>P2 – High:</strong> 2 business hours</li>
+            <li><strong>P3 – Normal:</strong> 1 business day</li>
+            <li><strong>P4 – Low / Request:</strong> 2–3 business days</li>
+          </ul>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use my personal device for work?</h3>
+          <p>
+            Personal devices may be allowed under the BYOD policy.  
+            They must comply with security standards such as disk encryption, up-to-date antivirus, and strong passwords.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I report a suspicious email or phishing attempt?</h3>
+          <p>
+            Do not click any links. Use the “Report Phishing” button in your email client (if available) or forward the email to <strong>security@example.com</strong>.  
+            Then open a ticket so we can investigate.
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-top: 16px; font-size: 0.9rem;">
+        Still have questions? Check the <a href="knowledge-base.html">Knowledge Base</a> or
+        <a href="contact.html">submit a ticket</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> IT Help Desk · All rights reserved.</div>
+      <div>Email: it-helpdesk@example.com · Extension: 1234</div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

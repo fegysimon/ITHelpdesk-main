@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IT Help Desk | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">IT Help Desk</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+          <li><a href="contact.html">Contact / Ticket</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <span class="hero-highlight">24x7 Internal IT Support</span>
+        <h1 class="hero-title">Welcome to the IT Help Desk</h1>
+        <p class="hero-subtitle">
+          Hardware issue? Locked out of an account? Need software installed?  
+          The IT Help Desk is your single point of contact for all technology support.
+        </p>
+        <a href="contact.html" class="btn">Submit a Support Ticket</a>
+      </div>
+
+      <div class="hero-cards">
+        <div class="card">
+          <h2>Popular Requests</h2>
+          <ul class="feature-list">
+            <li>Password reset & account unlock</li>
+            <li>Laptop / desktop performance issues</li>
+            <li>VPN & remote access problems</li>
+            <li>Email & Teams / Zoom issues</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Support Hours</h2>
+          <p><strong>Standard:</strong> Monday – Friday, 9:00 – 18:00</p>
+          <p><strong>Emergency:</strong> On-call for critical incidents</p>
+          <p class="status-pill">Current status: Operating normally</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="margin-top: 32px;">
+      <h2 class="section-title">How We Can Help</h2>
+      <p class="section-subtitle">
+        Whether you're onboarding, troubleshooting, or requesting new access, the IT Help Desk is here to guide you.
+      </p>
+
+      <div class="hero-cards">
+        <div class="card">
+          <h3>Hardware Support</h3>
+          <p>Issues with laptops, desktops, monitors, docking stations, or peripherals.</p>
+        </div>
+        <div class="card">
+          <h3>Software & Access</h3>
+          <p>Installations, upgrades, license requests, and access to internal systems.</p>
+        </div>
+        <div class="card">
+          <h3>Accounts & Security</h3>
+          <p>Password resets, MFA setup, compromised accounts, and security best practices.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> IT Help Desk · All rights reserved.</div>
+      <div>Email: it-helpdesk@example.com · Extension: 1234</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
